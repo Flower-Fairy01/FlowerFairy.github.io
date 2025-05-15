@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerFairy - Личный кабинет</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <style>
+        /* Ваши стили остаются прежними */
+        body {
+            font-family: 'Jura', sans-serif;
+            background-color: #FCFAEA;
+            line-height: 1.2;
+            margin: 0;
+        }
+        h1 {
+            font-family: 'Inknut Antiqua', serif;
+            font-size: 24px; 
+            margin: 0;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 65px;
+            color: #FFB229;
+            line-height: 1.2;
+        }
+        h3 {
+            font-size: 65px;
+            color: #D06A6F;
+            line-height: 1.2;
+        }
+        h4 {
+            font-size: 65px;
+            color: #9A5493;
+            line-height: 1.2;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #9A5493;
+            font-size: 26px; 
+            text-decoration: none; 
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            background-color: rgba(154, 84, 147, 0.2);
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 20px;
+            flex-wrap: wrap; 
+        }
+        .header-line {
+            background-color: #FFB229;
+            height: 5px;
+            width: 60%; 
+            margin: 0 auto; 
+        }
+        .icon-container {
+            display: flex;
+            gap: 15px; 
+        }
+        .icon-container a img {
+            width: 24px; 
+            height: 24px; 
+            transition: filter 0.3s;
+        }
+        .icon-container a:hover img {
+            filter: brightness(0.8); 
+        }
+        .avatar-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+        .avatar {
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%; 
+            cursor: pointer; 
+        }
+        .welcome-text {
+            color: #9A5493;
+            font-size: 24px;
+            margin: 10px 0;
+            text-align: center; 
+        }
+        .button {
+            background-color: #FFB229;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: rgba(255, 178, 41, 0.8);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+        .main-title {
+            color: #9A5493; 
+            font-size: 36px; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        /* Стили для скрытого input */
+        .hidden-input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div style="display: flex; align-items: center; margin-right: 20px;">
+            <img src="https://sun9-62.userapi.com/impg/fOzt4jh_NrNs_AsUG8sFTnFvcP89Z7SQLejg7Q/pLPbuOb64_w.jpg?size=98x92&quality=96&sign=279f5626592724b59ae4990365889602&type=album" alt="Логотип FlowerFairy" style="margin-right: 10px;">
+            <h1 style="color: #D06A6F;">Flower</h1>
+            <h1 style="color: #9A5493;">Fairy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="каталог.html">Каталог</a></li>
+                <li><a href="Доставка.html" style="color: #D06A6F;">Доставка</a></li>
+                <li><a href="О нас.html" style="color: #FFB229;">О нас</a></li>
+                <li><a href="Контакты.html" style="color: #FFB229;">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="icon-container">
+            <a href="Вход.html" title="Личный кабинет"><img src="https://sun9-24.userapi.com/impg/rkZsmRMdehgd8gPc-28O23VpQtMpuVP9kU0CMg/5v3IOOqf-oE.jpg?size=58x58&quality=95&sign=1d24520cf617688f19d0ad52e4bb8f63&type=album" alt="Личный кабинет"></a>
+            <a href="Корзина.html" title="Корзина"><img src="https://sun9-32.userapi.com/impg/3axzgHrms0bB7FyBz3s-74j3N4PtKdlvsgteKw/_XX4wb_B5VY.jpg?size=48x52&quality=95&sign=cf18ccb19525ccc61962bfdef1c9dc14&type=album" alt="Корзина"></a>
+            <a href="https://vk.com/club229809229" title="ВКонтакте" target="_blank"><img src="https://sun9-27.userapi.com/impg/52Bk4qxsb4rKJLJxXNHsZBGUaUeKOk3Ul1G9Ow/PYLEnMaXm9Y.jpg?size=68x58&quality=95&sign=436d8c7a92397efd29557402ea4b10d2&type=album" alt="ВКонтакте"></a>
+            <a href="https://web.telegram.org/k/#-2534623756" title="Telegram" target="_blank"><img src="https://sun9-68.userapi.com/impg/ddNemc3w8NFw5vJEcF51gvn1PpG3utLHA8i3yg/Xz7xTYh34cc.jpg?size=61x58&quality=95&sign=7bdb354c044d8a4c959a6e11b68c049b&type=album" alt="Telegram"></a>
+        </div>
+    </div>
+    <div class="header-line"></div>
+</header>
+
+<main>
+    <div class="main-title">Ваш личный кабинет</div> 
+    
+    <div class="avatar-container">
+        <img id="avatar" src="https://sun9-62.userapi.com/impg/fOzt4jh_NrNs_AsUG8sFTnFvcP89Z7SQLejg7Q/pLPbuOb64_w.jpg?size=98x92&quality=96&sign=279f5626592724b59ae4990365889602&type=album" alt="Аватарка" class="avatar" onclick="document.getElementById('avatarInput').click()">
+        <div class="welcome-text" id="userName">Имя пользователя</div>
+        <input type="file" id="avatarInput" class="hidden-input" accept="image/*" onchange="changeAvatar(event)">
+    </div>
+    
+    <div class="button-container">
+        <button class="button" onclick="goToCart()"><a href="Корзина.html" title="Корзина">Моя корзина</a></button>
+        <button class="button" onclick="orderDelivery()"><a href="ЗаказатьДоставку.html" title="Корзина">Доставка</a></button>
+        <button class="button" id="logoutButton">Выйти</button>
+    </div>
+</main>
+
+<script>
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const username = localStorage.getItem('loggedInUser   '); // Убедитесь, что ключ без пробелов
+
+    if (username) {
+        const user = users.find(user => user.username === username);
+        if (user) {
+            document.getElementById('userName').innerText = user.name; 
+
+            // Загрузка аватара из localStorage, если он есть
+            const avatarSrc = localStorage.getItem(`${username}_avatar`);
+            if (avatarSrc) {
+                document.getElementById('avatar').src = avatarSrc;
+            }
+        } else {
+            alert("Пользователь не найден.");
+            window.location.href = 'Вход.html'; 
+        }
+    } else {
+        document.getElementById('userName').innerText = 'Гость'; // Отображение имени гостя
+    }
+
+    // Функция для смены аватара
+    function changeAvatar(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('avatar').src = e.target.result; // Обновляем аватар
+                localStorage.setItem(`${username}_avatar`, e.target.result); // Сохраняем в localStorage
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        localStorage.removeItem('loggedInUser   '); 
+        alert("Вы вышли из аккаунта."); 
+        window.location.href = 'Вход.html'; 
+    });
+</script>
+
+
+
+
+</body>
+</html>
